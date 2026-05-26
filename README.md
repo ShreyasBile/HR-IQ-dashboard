@@ -101,6 +101,3 @@ All endpoints are under the base URL `http://localhost:8000/api`.
 
 Frontend API calls are defined in `frontend/src/services/api.ts` (base URL `http://localhost:8000/api`).
 
-## License
-
-Add a license if you plan to distribute this project.
