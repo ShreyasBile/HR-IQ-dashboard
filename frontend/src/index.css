@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-primary: #c4dfe6;
+  --color-secondary: #66a5ad;
+  --color-accent: #07575b;
+  --color-background: #f8fbff;
+  --color-surface: #ffffff;
+  --color-text-main: #003b46;
+  
+  --font-sans: 'Outfit', 'Inter', system-ui, sans-serif;
+  
+  --shadow-premium: 0 10px 30px -5px rgba(102, 165, 173, 0.1), 0 4px 12px -2px rgba(102, 165, 173, 0.05);
+  --shadow-hover: 0 20px 40px -8px rgba(102, 165, 173, 0.15);
+}
+
+:root {
+  --background: #f8fbff;
+  --foreground: #003b46;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Outfit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Glassmorphism Utilities */
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: var(--shadow-premium);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #66a5ad 0%, #07575b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.premium-gradient {
+  background: linear-gradient(135deg, #f0f7f8 0%, #c4dfe6 100%);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #66a5ad 0%, #07575b 100%);
+  box-shadow: 0 4px 14px 0 rgba(102, 165, 173, 0.39);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 165, 173, 0.45);
+}

@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+pandas
+numpy
+scikit-learn
+langchain
+chromadb
+sentence-transformers
+google-generativeai
+python-dotenv
+openpyxl
